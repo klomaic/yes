@@ -208,6 +208,7 @@ local function DWGZV_fake_script() -- OpenClose.LocalScript
 			ui.Visible = false
 			wait(.0001)
 			db = true
+			print("leave a bloody scene")
 		end
 	end)
 end
