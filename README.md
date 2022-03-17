@@ -127,23 +127,23 @@ NoVoid.TextWrapped = true
 
 -- Scripts:
 
-local function IVMDYR_fake_script() -- Spawn.LocalScript 
+local function RHXBNZD_fake_script() -- Spawn.LocalScript 
 	local script = Instance.new('LocalScript', Spawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.641228, 268, 2.08173)
 	end)
 end
-coroutine.wrap(IVMDYR_fake_script)()
-local function SHHAX_fake_script() -- MiddleIsland.LocalScript 
+coroutine.wrap(RHXBNZD_fake_script)()
+local function DUZRKZO_fake_script() -- MiddleIsland.LocalScript 
 	local script = Instance.new('LocalScript', MiddleIsland)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4,194,-6)
 	end)
 end
-coroutine.wrap(SHHAX_fake_script)()
-local function VDBGYF_fake_script() -- Speed.Script 
+coroutine.wrap(DUZRKZO_fake_script)()
+local function FRQVGX_fake_script() -- Speed.Script 
 	local script = Instance.new('Script', Speed)
 
 	local plr = game.Players.LocalPlayer
@@ -156,8 +156,8 @@ local function VDBGYF_fake_script() -- Speed.Script
 		end
 	end)
 end
-coroutine.wrap(VDBGYF_fake_script)()
-local function BVJPK_fake_script() -- MegaVip.Script 
+coroutine.wrap(FRQVGX_fake_script)()
+local function VHTCV_fake_script() -- MegaVip.Script 
 	local script = Instance.new('Script', MegaVip)
 
 	local plr = game.Players.LocalPlayer
@@ -166,8 +166,8 @@ local function BVJPK_fake_script() -- MegaVip.Script
 		plr.Character.HumanoidRootPart.CFrame = CFrame.new(0, 262.5, 57)
 	end)
 end
-coroutine.wrap(BVJPK_fake_script)()
-local function TUZZTJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(VHTCV_fake_script)()
+local function UCZGKL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local text = script.Parent.Parent
@@ -190,8 +190,8 @@ local function TUZZTJ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TUZZTJ_fake_script)()
-local function FFIPZP_fake_script() -- OpenClose.LocalScript 
+coroutine.wrap(UCZGKL_fake_script)()
+local function EMRDHWM_fake_script() -- OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', OpenClose)
 
 	local db = true
@@ -201,6 +201,7 @@ local function FFIPZP_fake_script() -- OpenClose.LocalScript
 	local speed = par.Speed
 	local Mega = par["Mega Vip"]
 	local ui = par.ui	
+	local novoid = par.NoVoid
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Spawn.Visible == false and db == true then
 			db = false
@@ -210,6 +211,7 @@ local function FFIPZP_fake_script() -- OpenClose.LocalScript
 			speed.Visible = true
 			Mega.Visible = true
 			ui.Visible = true
+			novoid.Visible = true
 			wait(.0001)
 			db = true 
 		else 
@@ -220,13 +222,14 @@ local function FFIPZP_fake_script() -- OpenClose.LocalScript
 			speed.Visible = false
 			Mega.Visible = false
 			ui.Visible = false
+			novoid.Visible = false
 			wait(.0001)
 			db = true
 		end
 	end)
 end
-coroutine.wrap(FFIPZP_fake_script)()
-local function TISGC_fake_script() -- NoVoid.LocalScript 
+coroutine.wrap(EMRDHWM_fake_script)()
+local function JBWK_fake_script() -- NoVoid.LocalScript 
 	local script = Instance.new('LocalScript', NoVoid)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -239,4 +242,4 @@ local function TISGC_fake_script() -- NoVoid.LocalScript
 		p.Transparency = 0.4
 	end)
 end
-coroutine.wrap(TISGC_fake_script)()
+coroutine.wrap(JBWK_fake_script)()
